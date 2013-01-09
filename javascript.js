@@ -1,4 +1,4 @@
-var numberoffacts = 2;
+var numberoffacts = 11;
 
 function getRandnum(){
 	var picture = new Image();
