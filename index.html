@@ -2,51 +2,131 @@
 <html>
 
 <head>
-<<<<<<< HEAD
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
 <link rel="icon" href="IndianaFlagIcon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="IndianaFlagIcon.ico" type="image/x-icon"/>
-<script src="javascript.js">
+<link rel="stylesheet" href="coolstyle.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=BenchNine ' rel='stylesheet' type='text/css'>
+<meta name="description" content="Are you ready for BPA National Conferences 2014?">
+
+<!--[if lt IE 9]>
+<script>
+document.createElement("nav");
+document.createElement("footer");
 </script>
+<![endif]-->
 
 <title>Welcome to Indianapolis, Indiana</title>
 </head>
 
-<body>
-<script>
-getRandom()
-</script>
+<body onload="slideit()">
+<header>
+<img src="indyskyline.jpg" alt="beautiful indianapolis skyline">
+<img src="bpaheader.png" alt="BPA header" id="bpahead">
+</header>
 
-<div>
+<hr>
 
-<p id = "navbar" >Home | History | Monuments and Facts | Local Attractions</p>
+<div id="unwrapper">
 
-<p id = "nowyourejustsomeheaderthatiusedtoknow" >BPA Nationals</p>
-<p id = "nowyourejustsomeheaderthatiusedtoknow" >April 29 - May 4</p>
-<p id = "text">Indianapolis has lots of potential as the 2014 BPA National site. Beautiful buildings dominate this city, with skyscrapers and many kinds of commercial and industrial practices. Cement-bordered canals give the city a fresh, more natural look, though the main attraction of Indianapolis, as with most cities, is the architecture.
+<div id="wrapper">
+
+<div id="sidebar">
+
+<nav class="sidedivs">
+  <ul>
+    <li class="navbtn"><a href="#">Home</a></li>
+    <li class="navbtn"><a href="history.html">History</a></li>
+    <li class="navbtn"><a href="restaurants.html">Restaurants</a></li>
+	  <li class="navbtn"><a href="attractions.html">Local Attractions</a>
+		<ul>
+		<li id="secnavbtn"><a href="museums.html">Museums</a></li>
+		<li id="secnavbtn"><a href="parks.html">Parks</a></li>
+		<li id="secnavbtn"><a href="tours.html">Tours</a></li>
+		</ul>
+	</li>
+  </ul>
+</nav>
+
+<div class="sidedivs" id="search">
+
+<div id="srcdiv">
+
+<form id="searchbox_013638411530565087051:pensig_ky-o" action="searchresults.html">
+
+  <input value="013638411530565087051:pensig_ky-o" name="cx" type="hidden"/>
+  
+  <input value="FORID:11" name="cof" type="hidden"/>
+  
+  <input id="q" style="width:150px;" name="q" type="text" value="Search" onfocus="this.style.color = '#000'; if (this.value == 'Search') {this.value = '';}" onblur="this.style.color = '#777'; if (this.value == ''){ this.value = 'Search'; }"/>
+  
+  <input id="searchbtn" value="Search" name="sa" type="image" src="searching.png"/>
+  
+</form>
+
+</div>
+
+</div>
+
+<div class="sidedivs" id="facts">
+</div>
+
+<div class="sidedivs" id="followbpa">
+<a href="http://www.facebook.com/businessprofessionalsofamerica?" target="_blank"><img src="facebook.png" alt="facebook" /></a>
+<a href="https://twitter.com/national_bpa" target="_blank"><img src="twitter.png" alt="twitter" /></a>
+<h3>Find BPA on the web!</h3>
+</div>
+
+</div>
+
+<div id="mainbody">
+<h1>Indianapolis: BPA Nationals 2014</h1>
+
+<div id="imgslideshow" onmouseout="restart()">
+<img src="downtown_view.jpg" name="slide" width="464" height="336" alt="beautiful slideshow" />
+<div class="arrow" id="fwd" onclick="forewards()" unselectable="on"><p>&raquo;</p></div>
+<div class="arrow" id="back" onclick="backwards()" unselectable="on"><p>&laquo;</p></div>
+</div>
+
+<p>Indianapolis has lots of potential as the 2014 BPA National site. Beautiful buildings dominate this city, with skyscrapers and many kinds of commercial and industrial practices. Cement-bordered canals give the city a fresh, more natural look, though the main attraction of Indianapolis, as with most cities, is the architecture.
 </p>
 
-<p id = "text">
-Beautiful churches dot the city, adding their own flavor with their Gothic structures. Pointed arches, spires, and stained glass windows dot the structures. Museums are also a great place to visit; they’re great attractions for children (who have their own museum!) and adults alike. Science museums, history museums, and even racecar museums occupy the city, and they bring attractive days of fun.
+<p>
+Beautiful churches dot the city, adding their own flavor with their Gothic structures. Pointed arches, spires, and stained glass windows dot the structures. Museums are also a great place to visit; they&#39;re great attractions for children (who have their own museum!) and adults alike. Science museums, history museums, and even racecar museums occupy the city, and they bring attractive days of fun.
 </p>
 
-One of the city’s few parks, Eagle Creek, gives access to a beautiful flowing river and beaches for playing in the sand, when it’s not too cold. This, along with playgrounds and activities, make the city a good place for children.
-<p id = "text">
+<p>One of the city&#39;s parks, Eagle Creek, gives access to a beautiful flowing river and beaches for playing in the sand, when it&#39;s not too cold. This, along with playgrounds and activities, make the city a good place for children.
+</p>
+
+<p>
 Nationals would, ideally, be held somewhere near several hotels, so transportation between the site and living quarters would be easier. Events would be mapped, and contestants could arrive early for activities. Hopefully, somewhere there would be a pool, because swimming is amazing. After all the events, dinner could be served, and the BPA members could hear any speeches that the hosts would want to say and could discuss the events of the day.
 </p>
 
-<p id = "text">
+<p>
 Ladies and gentlemen, Indianapolis, Indiana.
 </p>
 
 </div>
 
-<img src="" alt="fact related image" name="factpicture">
-<p id="factparagraph"></p>
+</div>
+
+<div id="wrapper">
+<footer>
+<p>Created by Annelies Odermann and Kat Kerrick</p>
+<p>All images are licensed under the creative commons, header image copyright Prabhakar Koduri.</p>
+<p><a href="about.html">about</a> | <a href="copyrightinfo.html">copyright</a></p>
+</footer>
+</div>
+
+</div>
+
+
+<script>
+getRandnum()
+</script>
 
 </body>
 
-<! Sources:>
-<! http://www.ehow.com/how_5409409_receive-letter-santa-mail.html>
-<! http://en.wikipedia.org/wiki/File:Flag_of_Indianapolis.svg>
 
 </html>
