@@ -58,6 +58,29 @@ function restart(){
 	timer = setTimeout("slideit()", 2500);
 }
 
+function sendmessage(){
+	var email = document.getElementsByName("email")[0].value;
+	var subject = document.getElementsByName("subject")[0].value;
+	var message = document.getElementsByName("message")[0].value;
+	if (message=="" || message==null){
+		alert("It looks like you don't actually have anything to say to us. We really would love your feedback.");
+	}
+	else if (email=="" || email==null){
+		alert("Don't forget to send us your email! We don't bite, but you could always use a fake email if you want.");
+	}
+	else if (subject=="" || subject==null){
+		alert("Please fill in the subject line, too. We don't want to miss your email.");
+	}
+	else {
+		document.messageus.action = "contact.php";
+		document.messageus.submit();
+	}
+}
+
+$(window).scroll(function () { 
+  $("header").css( {'margin-left': $(window).scrollLeft()} ); 
+}); 
+
 (function() {
  var cx = '013638411530565087051:pensig_ky-o';
  var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;

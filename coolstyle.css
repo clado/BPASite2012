@@ -27,8 +27,22 @@ a {
 
 header {
 	max-width: 1280px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 0px;
+	width: 100%;
+	position: relative;
+}
+
+
+header img{
+	max-width: 100%;
+}
+
+#bpahead {
+	position: absolute;
+	left: 65%;
+	top: 10%;
+	z-index: 1;
+	width: 15%;
 }
 
 h1, h2, h4, h5, h6, h7, h8{
@@ -62,14 +76,6 @@ h3 {
 	display: bock;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#bpahead {
-	position: absolute;
-	left: 65%;
-	top: 3%;
-	z-index: 1;
-	width: 15%;
 }
 
 div {
@@ -182,10 +188,6 @@ div {
 
 	margin-left: -68%;
 	width: 60%;
-}
-
-header img{
-	max-width: 100%;
 }
 
 img {
@@ -408,4 +410,15 @@ nav ul li ul{
 
 #secnavbtn:hover a{
 	color: #FC863F; 
+}
+
+#formcenter {
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#btncenter {
+	text-indent: 0px;
+	text-align: center;
 }
